@@ -1,0 +1,38 @@
+{
+  "name": "@alexis-piquet/logger",
+  "version": "0.0.0",
+  "description": "Logger",
+  "author": "alexis.piquet.dev@free.com",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "npm run clean && echo Using TypeScript && npx tsc --version && npx tsc --build && npx tsc-alias",
+    "build:add": "npm run build && git add .",
+    "clean": "npx rimraf dist",
+    "major-release": "npm run build:add && git commit -m '[major-release]' && git push --force-with-lease && npm version major && npm publish --access public && git push",
+    "minor-release": "npm run build:add && git commit -m '[minor-release]' && git push --force-with-lease && npm version minor && npm publish --access public && git push",
+    "patch-release": "npm run build:add && git commit -m '[patch-release]' && git push --force-with-lease && npm version patch && npm publish --access public && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexis-piquet/logger.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexis-piquet/logger/issues"
+  },
+  "homepage": "https://github.com/alexis-piquet/logger#readme",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "rimraf": "^6.1.2",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.3"
+  },
+  "types": "./dist/index.d.ts"
+}

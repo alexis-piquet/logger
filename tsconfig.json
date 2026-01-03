@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    "lib": ["ESNext", "DOM"],
+    "types": ["node"],
+
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+
+    "paths": {
+      "#constants": ["./src/constants"],
+      "#constants/*": ["./src/constants/*"],
+      "#logger": ["./src/logger"],
+      "#logger/*": ["./src/logger/*"],
+      "#types": ["./src/types"],
+      "#types/*": ["./src/types/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
