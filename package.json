@@ -1,6 +1,6 @@
 {
   "name": "@alexis-piquet/logger",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Logger",
   "author": "alexis.piquet.dev@free.com",
   "main": "./dist/index.js",
