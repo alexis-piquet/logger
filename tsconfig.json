@@ -8,18 +8,14 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-
-    "lib": ["ESNext", "DOM"],
-    "types": ["node"],
-
-    "module": "ESNext",
+    "lib": ["esnext", "dom"],
+    "module": "CommonJS",
     "moduleResolution": "node",
     "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-
     "paths": {
       "#constants": ["./src/constants"],
       "#constants/*": ["./src/constants/*"],
